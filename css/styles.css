@@ -255,7 +255,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 .thead-light{
-  background-color: #034dfe;
+  background-color: black;
 }
 pre,
 code,
@@ -3046,6 +3046,21 @@ textarea.form-control-lg {
   background-color: rgba(3,77,254,0.7);
   border-color: #034dfe;
 }
+
+.btn-primary-special{
+  color: #fff;
+  /* background-color: #f4623a;
+  border-color: #f4623a; */
+  background-color: rgba(21,51,119,0.7);
+  border-color: #153377;
+}
+
+.btn-primary-special:hover {
+  color: #fff;
+  background-color: #153377;
+  border-color: #153377;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #153377;
@@ -6541,6 +6556,13 @@ textarea.form-control-lg {
   left: 0;
   z-index: 1030;
 }
+.fixed-top-special{
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 
 .fixed-bottom {
   position: fixed;
@@ -7826,7 +7848,9 @@ textarea.form-control-lg {
 .bg-primary {
   /* --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
-  background-image: radial-gradient(rgba(3, 77, 254,1), rgba(3, 77, 254,0)) !important;
+  /* background-image: radial-gradient(rgba(3, 77, 254,1), rgba(3, 77, 254,0)) !important; */
+  background: rgb(255,255,255);
+  background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(3,77,254,1) 25%, rgba(255,255,255,1) 100%);
 }
 
 .bg-secondary {
@@ -11319,6 +11343,12 @@ body {
   padding: 8rem 0;
 }
 
+.page-section-special{
+  padding: 8rem 0;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -11527,4 +11557,8 @@ header.masthead h1, header.masthead .h1 {
 #rightChild{
   right: 0;
   position: absolute;
+}
+
+.navbar-special{
+  background-color: white;
 }
